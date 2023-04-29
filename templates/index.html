@@ -18,18 +18,17 @@
         {% if id %}
         <h1>認証</h1>
         <p>ロボットではないか確認をします。</p>
-        <form method="POST" action="">
+        <form method="POST" action="complete?id={{ session }}">
             <div class="cf-turnstile" data-sitekey="{{ site_key }}" data-callback="turnstileVerified" data-secretkey="{{ secret_key }}"></div>
             <input type="submit" value="認証" id="submit" disabled="disabled">
         </form>
         {% elif not id %}
-        <h2>IDが不明です</h2>
-        {% elif id == "success" %}
-        <h2>認証が完了しました！</h2>
+        <h2>{{ msg }}</h2>
         {% endif %}
     </diV>
 </div>
 </body>
+<!--
 <script>
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
@@ -40,22 +39,10 @@
     const box = document.querySelector('main');
 
     submitButton.addEventListener('click', (event) => {
-        event.preventDefault();
-        const formData = new FormData(form);
-        formData.append('id', id);
-        fetch(`/?id=${id}`, {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => {
-            console.log('Response:', response);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            box.innerHTML = "エラーが発生しました。"
-        });
+        location.href = `complete?id=${id}`;
     });
 </script>
+-->
 <style>
     h1{
         margin: 0;
