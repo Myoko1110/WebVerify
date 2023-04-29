@@ -1,8 +1,7 @@
-Token: token
-RoleID: 1100711873457958922
+Token: OTYwODgwNTk4MzY3NDczNzQ3.G0w3sh.ew6W2emVW0FkHW19htCDqHPd8GdUxz7Cv7VDiM
+RoleID: 967415313035575300
 # Domain: www.utrbase.net
 Domain: localhost:5000
-role_id: 967415313035575300
 
 # Turnstile setting
 site_key: 0x4AAAAAAAEU2ag_Au-CinjF
