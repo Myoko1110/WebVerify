@@ -1,0 +1,9 @@
+Token: token
+RoleID: 1100711873457958922
+# Domain: www.utrbase.net
+Domain: localhost:5000
+role_id: 967415313035575300
+
+# Turnstile setting
+site_key: 0x4AAAAAAAEU2ag_Au-CinjF
+secret_key: 0x4AAAAAAAEU2aijDvTMO6scSsjW7Pf3MNI
