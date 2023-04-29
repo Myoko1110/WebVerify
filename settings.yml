@@ -4,5 +4,5 @@ RoleID: 967415313035575300
 Domain: localhost:5000
 
 # Turnstile setting
-site_key: 0x4AAAAAAAEU2ag_Au-CinjF
-secret_key: 0x4AAAAAAAEU2aijDvTMO6scSsjW7Pf3MNI
+site_key: 0x0000000000000000000
+secret_key: 0x000000000000000000000
