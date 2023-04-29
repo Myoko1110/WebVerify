@@ -6,7 +6,7 @@ from datetime import datetime
 import discord
 from discord.ext.commands import Cog, Bot
 from flask import Flask, render_template, request
-import pytz
+# import pytz
 import yaml
 
 
@@ -51,9 +51,9 @@ class VerifyView(discord.ui.View):
         await inter.response.send_message(f"こちらのURLから認証を完了させてください：http://{Domain}?id={random}", ephemeral=True)
 
         # セッションを変数に追加
-        now = datetime.now(pytz.timezone('Asia/Tokyo')).strftime('%Y-%m-%d %H:%M:%S')
+        # now = datetime.now(pytz.timezone('Asia/Tokyo')).strftime('%Y-%m-%d %H:%M:%S')
         user = inter.user.id
-        lists = {"user": user, "server": inter.guild.id, "time": now}
+        lists = {"user": user, "server": inter.guild.id}
         session[random] = lists
         print(session)
 
